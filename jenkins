@@ -1,0 +1,13 @@
+node('master') {
+    stage('gitdemo') {
+        git 'https://github.com/alekyagujjala/gitdemo.git'
+	}
+	}
+	node('master') {
+	   stage('maven') {
+	       sh 'mavenproject'
+	       }
+	       }
+
+
+	       
